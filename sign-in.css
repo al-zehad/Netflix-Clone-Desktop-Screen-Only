@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    background-color: rgb(27, 27, 27);
+}
+
+/* Hero Section Starts */
+.hero {
+    position: relative;
+    min-height: 120vh;
+    background: url(./assets/images/bg-image-hero.jpg) center no-repeat;
+    overflow: hidden;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.85)
+    );
+}
+.nav, .content {
+    position: relative;
+    z-index: 2;
+}
+.nav {
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 48px;
+}
+.logo {
+    width: 150px;
+}
+.content {
+    max-width: 450px;
+    width: 30%;
+    margin: 40px auto 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 48px 40px;
+}
+.content h1 {
+    color: white;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+input[type="text"] {
+    margin-top: 30px;
+}
+.main-input {
+    color: white;
+    padding: 16px;
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid rgb(191, 191, 191);
+    background: transparent;
+}
+.btn {
+    width: 100%;
+    color: white;
+    border: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.signin {
+    background-color: #e50914;
+}
+.signin:hover {
+    background-color: #be0711;
+}
+.or {
+    text-align: center;
+    color: #c1c1c1;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.secondary {
+    background-color: rgba(129, 129, 129, 0.4);
+}
+.secondary:hover {
+    background-color: rgba(95, 94, 94, 0.4)
+}
+a {
+    color: white;
+}
+.forgot {
+    text-align: center;
+}
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+}
+.new {
+    color: #c1c1c1;
+}
+.new a {
+    text-decoration: none;
+}
+.new a:hover {
+    text-decoration: underline;
+}
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #999;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+input[type="checkbox"]::after {
+    content: "✔︎";
+    font-size: 16px;
+    color: #000;
+    display: none;
+}
+input[type="checkbox"]:checked {
+    background-color: #fff;
+    border-color: #fff;
+}
+input[type="checkbox"]:checked::after {
+    display: block;
+}
+footer {
+    width: 80vw;
+    margin: 40px auto;
+}
+.footer {
+    margin-bottom: 40px;
+}
+.footer a, .grid-container a {
+    color: rgb(191, 191, 191);
+}
+.footer a {
+    font-size: 1.1rem;
+}
+.grid-container a {
+    font-size: 0.9rem;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 20px;
+}
+.author {
+    margin-top: 30px;
+    color: white;
+    text-align: center;
+}
+hr {
+    margin-top: 40px;
+}
+.author em {
+    color: #e50914;
+}
+.author a {
+    color: #e50914;
+}
+.author p:last-child {
+    margin-top: 20px;
+}

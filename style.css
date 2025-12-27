@@ -1,0 +1,313 @@
+
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+/* Hero Section Starts */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    background: url(./assets/images/bg-image-hero.jpg) center no-repeat;
+    overflow: hidden;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.85)
+    );
+}
+.nav,
+.content {
+    position: relative;
+    z-index: 2;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 48px;
+}
+.logo {
+    width: 100px;
+}
+.btn {
+    background: #e50914;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: #be0711;
+}
+.signin {
+    padding: 7px 16px;
+    font-size: 1rem;
+}
+.cta button {
+    padding: 8px 20px;
+    font-size: 1.3rem;
+}
+.cta button svg {
+    vertical-align: middle;
+}
+.content {
+    width: 500px;
+    max-width: 800px;
+    margin: 70px auto 0;
+    text-align: center;
+    padding: 120px 24px 0;
+    color: white;
+}
+.content h1 {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    font-weight: 800;
+    line-height: 1.1;
+}
+.content p {
+    margin-top: 16px;
+    font-size: 1.1rem;
+}
+.cta {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+.cta input {
+    color: white;
+    padding: 16px;
+    min-width: 250px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid rgb(191, 191, 191);
+    background: transparent;
+}
+.cta input:focus {
+    outline: 2px solid white;
+}
+.cta input::placeholder {
+    color: rgb(191, 191, 191);
+    font-size: 1.1rem;
+}
+.curve-wrapper {
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140%;
+    height: 160px;
+    pointer-events: none;
+}
+.curve-line {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+    background: linear-gradient(
+    to right,
+    rgba(33, 13, 22, 1) 16%,
+    rgba(184, 40, 105, 1),
+    rgba(229, 9, 20, 1),
+    rgba(184, 40, 105, 1),
+    rgba(33, 13, 22, 1) 84%
+    );
+    border-radius: 50% 50% 0 0;
+}
+.curve-glow {
+    position: relative;
+    top: -90%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(to right, #040a12, #122541, #040a12),
+    transparent 70%;
+    filter: blur(50px);
+    z-index: -2;
+}
+/* Hero Section Ends */
+
+/* Trending Content Starts */
+.trending-content, .reason, .faq, footer {
+    max-width: 80vw;
+    margin: 0 auto;
+}
+.section-title {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 1.5rem;
+}
+.card {
+    position: relative;
+    margin-left: 25px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: scale(1.1);
+}
+.card img {
+    border-radius: 5px;
+    height: 270px;
+}
+.card-serial {
+    color: black;
+    font-size: 6rem;
+    font-weight: 900;
+    -webkit-text-stroke: 1px white;
+    position: absolute;
+    bottom: 0;
+    left: -10%;
+}
+.card-container {
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+}
+.arrow {
+    background-color: #161616;
+    padding: 50px 3px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.arrow:hover {
+    background-color: #202020;
+}
+/* Trending Content Ends */
+
+.reas {
+    gap: 20px;
+}
+.reason, .faq, footer, .lang {
+    margin-top: 60px;
+}
+.reason-card {
+    background: #192145;
+    background: linear-gradient(
+    156deg,
+    rgba(25, 33, 69, 1) 0%,
+    rgb(37, 27, 55) 70%,
+    rgb(37, 27, 55) 100%
+    );
+    width: 25%;
+    height: 280px;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+.card-title {
+    color: white;
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+}
+.card-desc {
+    color: rgb(224, 224, 224);
+    font-size: 1rem;
+}
+.card-img {
+    width: 20%;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+
+/* faq */
+.qstn {
+    color: white;
+    background-color: #2D2D2D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+    padding: 10px 30px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.qstn:hover {
+    background-color: #3f3e3e;
+}
+.bigger {
+    font-size: 3rem;
+}
+.bcta-text {
+    text-align: center;
+    width: 80vw;
+    color: white;
+    margin: 60px auto 0;
+}
+.bottom {
+    margin-top: 20px;
+}
+.bottom input {
+    width: 500px;
+    max-width: 700px;
+}
+.footer {
+    margin-bottom: 40px;
+}
+.footer a, .grid-container a {
+    color: rgb(191, 191, 191);
+}
+.footer a {
+    font-size: 1.1rem;
+}
+.grid-container a {
+    font-size: 0.9rem;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 20px;
+}
+select {
+    background-color: #000;
+    color: white;
+    padding: 5px 15px;
+    border: 1px solid rgb(191, 191, 191);
+    border-radius: 4px;
+}
+select:focus {
+    outline: 2px solid white;
+}
+.author {
+    margin-top: 30px;
+    color: white;
+    text-align: center;
+}
+hr {
+    margin-top: 40px;
+}
+.author em {
+    color: #e50914;
+}
+.author a {
+    color: #e50914;
+}
+.author p:last-child {
+    margin-top: 20px;
+}
