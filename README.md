@@ -24,7 +24,8 @@ This project is a **desktop-only clone of Netflix’s landing and sign-in pages*
 
 ### Screenshot
 
-![Preview of the project](./Screenshots/Screenshot_1.png)[](./Screenshots/Screenshot_2.png)[](./Screenshots/Screenshot_3.png)[](./Screenshots/Screenshot_4.png)[](./Screenshots/Screenshot_5.png)
+![Preview of landing page](./Screenshots/Screenshot_1.png)
+![Preview of sign in page](./Screenshots/Screenshot_5.png)
 
 ### Links
 
